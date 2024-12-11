@@ -1,0 +1,101 @@
+.logo-2 {
+    animation: slideInRightZoom 2s ease-out;
+    transform-origin: center;
+}
+
+.logo-3 {
+    position: relative; /* Nauðsynlegt fyrir transform */
+    animation: slideInRightZoom 2s ease-out; /* Sama animation og logo-2 */
+    transform-origin: center; /* Zoomar frá miðju */
+}
+
+@keyframes slideInRightZoom {
+    0% {
+        opacity: 0;
+        transform: translateX(100%) scale(0);
+    }
+    50% {
+        opacity: 0.5;
+        transform: translateX(30%) scale(0.6);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
+
+
+
+
+/* slideshow 1 */
+.slides{
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1 fr;
+
+}
+
+.slides div{
+    width: 100%;
+    height: 50px;
+    animation: slide 10s ease-in-out infinite alternate;
+}
+
+@keyframes slide {
+    0%, 25% {
+        transform: translateY(0); 
+    }
+    26%, 50% {
+        transform: translateY(-100%); 
+    }
+    51%, 75% {
+        transform: translateY(-200%); 
+    }
+    76%, 100% {
+        transform: translateY(-300%); 
+    }
+}
+
+
+
+
+.slides-2 {
+    width: 600px; /* Breidd slideshow */
+    height: 400px; /* Hæð slideshow */
+    overflow: hidden;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Fjórar myndir í röð */
+}
+
+.slides-2 div {
+    width: 600px; /* Sama breidd og slides gáminn */
+    height: 400px; /* Sama hæð og slides gáminn */
+
+    animation: slide-2 16s ease-in-out infinite; /* Animation */
+}
+
+@keyframes slide-2 {
+    0%, 25% {
+        transform: translateX(0); /* Fyrsta mynd */
+    }
+    26%, 50% {
+        transform: translateX(-600px); /* Önnur mynd */
+    }
+    51%, 75% {
+        transform: translateX(-1200px); /* Þriðja mynd */
+    }
+    76%, 100% {
+        transform: translateX(-1800px); /* Fjórða mynd */
+    }
+}
+
+
+
+
+
+
+

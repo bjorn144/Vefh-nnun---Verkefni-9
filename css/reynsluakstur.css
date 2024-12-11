@@ -1,0 +1,106 @@
+/* General form styling */
+.form-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  fieldset {
+    border: none;
+    padding: 0;
+  }
+  
+  legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Form groups */
+  .form-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between fields */
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  /* For fields that are side by side (e.g., Fornöfn and Eftirnafn) */
+  .form-group.half-width {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .form-group.half-width > div {
+    flex: 1; /* Equal width for each field */
+    min-width: calc(50% - 10px); /* Ensure they split evenly */
+  }
+  
+  /* Textarea */
+  textarea {
+    resize: none;
+  }
+  
+  /* Checkbox */
+  .checkbox-group label {
+    font-weight: normal;
+    font-size: 0.9em;
+    line-height: 1.5;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  /* Submit button */
+  .submit-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #444;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .form-group.half-width {
+      flex-direction: column; /* Stacks fields on smaller screens */
+    }
+  
+    .form-group.half-width > div {
+      min-width: 100%; /* Full width for small screens */
+    }
+  }
+  

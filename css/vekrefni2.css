@@ -1,0 +1,74 @@
+.dagskraTexti{
+    text-align: center;
+}
+.tveirdalkar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;}
+
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+textarea {
+    height: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+}
+
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: var(--nc-bg-1);
+    align-items: center;
+
+}
+
+input[type="submit"]:hover {
+    background-color: #ffcc00;
+}
+
+.submit-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 768px){
+    thead{
+        display: none;
+    }
+    td{
+        display: block;
+        text-align: right;
+    }
+    
+    tr{
+        display: block;
+        margin: 1em;
+    }
+    td::before{
+        content: attr(haus);
+        float: left;
+        font-weight: bold;
+    }
+
+    .tveirdalkar{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+}
+
+

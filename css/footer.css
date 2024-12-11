@@ -1,0 +1,99 @@
+.bodyfooter{
+    margin:0;
+    overflow-x:hidden;
+    }
+    
+    .footer{
+    background:#fff;
+    padding:30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    }
+    
+    .footer .roww{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+    }
+    
+    .footer .roww a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+    }
+    
+    .footer .roww a:hover{
+    color:#000;
+    }
+    
+    .footer .roww ul{
+    width:100%;
+    }
+    
+    .footer .roww ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+    .footer .roww a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+    
+    @media (max-width:768px){
+    .footer{
+    text-align:left;
+    padding:5%;
+    }
+    .footer .roww ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+    .footer .roww a i{
+    margin:0% 3%;
+    }
+    }
+
+
+
+
+/* dót sem ég lagaði í endan */
+table {
+    font-family: "Playfair Display", serif;
+}
+
+.content-about p{
+    color: #777777;
+}
+.content-about h2{
+    font-family: "Playfair Display", serif;
+}
+
+.dagskraTexti h1{
+    color: #444444;
+    font-family: "Montserrat", sans-serif;
+}
+
+.bilatitill {
+    font-family: "Playfair Display", serif;
+}
+
+.slide-caption p{
+    color: #eee;
+}
+
+.product-details h2 {
+    font-family: "EB Garamond", serif;
+    color: #333;
+}
+
+.form-container {
+    font-family: "Montserrat", sans-serif;
+}
+.form-container div{
+    font-family: "Montserrat", sans-serif;
+    color: #444444;
+}

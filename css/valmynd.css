@@ -1,0 +1,113 @@
+
+.verk7-valmynd {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: var(--nc-bg-1);
+    color: var(--nc-bg-1);
+    position: relative;
+}
+
+.logo {
+    height: 50px;
+    
+}
+
+/* Mobile Menu Styles */
+.valmyndKlikk {
+    font-size: 24px;
+    position: relative;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    z-index: 999;
+    color: var(--nc-tx-1);
+}
+
+.valmyndKlikk:hover {
+    background-color: rgba(87, 87, 87, 0.479);
+  }
+
+#klikk {
+    display: none;
+}
+
+.valmynd {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    background-color: #fff;
+    position: absolute;
+    top: -250px;
+    left: 0;
+    right: 0;
+    transition: 1s all;
+    z-index: 998;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.valmynd a {
+    color: #000;
+    text-decoration: none;
+    padding: 10px 0;
+    font-size: 18px;
+    width: 100%;
+}
+
+#klikk:checked ~ .valmynd {
+    top: 65px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .valmyndKlikk {
+        display: none;
+    }
+
+    .valmynd{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        width: 60%;
+        
+        position: static;
+    }
+}
+
+
+/* animation á logo */
+.logo {
+    position: relative; /* Nauðsynlegt fyrir transform */
+    animation: slideInRightZoom 0.5s linear; /* Sama animation og logo-2 */
+    transform-origin: center; 
+}
+
+@keyframes slideInRightZoom {
+    0% {
+        opacity: 0;
+        transform: translateX(100%) scale(0);
+    }
+    25% {
+        opacity: 0.3;
+        transform: translateX(75%) scale(0.3);
+    }
+    50% {
+        opacity: 0.6;
+        transform: translateX(50%) scale(0.6);
+    }
+    75% {
+        opacity: 0.8;
+        transform: translateX(25%) scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
+
+
+
+
+
+
+

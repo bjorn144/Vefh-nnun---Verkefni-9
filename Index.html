@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML og CSS grunnur">
+    <meta name="author" content="GJG">
+    <title>Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/new.css">
+    <link rel="stylesheet" href="css/verkefni1.css">
+    <link rel="stylesheet" href="css/vekrefni2.css">
+    <link rel="stylesheet" href="css/valmynd.css">
+    <link rel="stylesheet" href="css/chatbox.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/zoom-logo2.css">
+    <link rel="stylesheet" href="css/verk7 - slideshow.css">
+    <link rel="stylesheet" href="css/verk7 - bilauppl.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" type="image/svg" href="images/rwd-icon.svg">
+</head>
+
+
+<!-- Valmynd byrjar -->
+
+   <div class="verk7valmynd">
+     <header class="verk7-valmynd">
+       <a href="Index.html"><img src="images/verkefni 7 - logo.svg" alt="Logo" class="logo"></a>
+       <input type="checkbox" id="klikk">
+       <label for="klikk" class="valmyndKlikk">&#9776;</label>
+       <nav class="valmynd">
+         <a href="Index.html">Heim</a>
+         <a href="Nýir bílar.html">Nýir bílar</a>
+         <a href="Bóka Reynsluakstur.html">Bóka reynsluakstur</a>
+         <a href="Opnunartímar.html">Þjónusta</a>
+        </nav>
+      </header>
+</div>
+<!-- valmynd endar -->
+
+<!-- slideshow byrjar -->
+<header class="landing">
+  <section class="slideshow-container">
+    <!-- Slide 1 -->
+    <div class="slide">
+      <div class="slidebent"><img src="images/koenigsegg2.png" alt="Slide 1"></div>
+      <div class="slide-caption">
+        <h2 class="bilatitill">Gemera</h2>
+        <p>Farðu lengra</p>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide">
+      <div class="slidebent"><img src="images/Taycan.jpg" alt="Slide 2"></div>
+      <div class="slide-caption">
+        <h2 class="bilatitill">Taycan</h2>
+        <p>Rafmagn í framtíðina</p>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide">
+      <div class="slidebent"><img src="images/porsche-911.jpg" alt="Slide 3"></div>
+      <div class="slide-caption">
+        <h2 class="bilatitill">911</h2>
+        <p >Þinn vegur</p>
+      </div>
+    </div>
+
+    <!-- Arrows -->
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+
+    <!-- Dots -->
+    <div class="dots">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+  </section>
+</header>
+<script src="js/slide2.js"></script>
+<!-- slideshow endar -->
+
+
+
+
+
+
+  
+  <!-- Chatbox byrjar  -->
+<input type="checkbox" id="chat-toggle" style="display:none;">
+<label for="chat-toggle" id="chat-btn"><span class="icon-bubbles"></span></label>
+
+<div id="chatbox">
+  <div class="chatbox-header">
+    <span>Spjallbox</span>
+
+  </div>
+  <form id="chat-form">
+    <label for="name">Nafn:</label>
+    <input type="text" id="name" name="name" placeholder="Name" required>
+    
+    <label for="email">Tölvupóstur:</label>
+    <input type="email" id="email" name="email" placeholder="Email" required>
+    
+    <label for="message">Skilaboð:</label>
+    <textarea id="message" name="message" placeholder="Message" required></textarea>
+    
+    <input type="submit" value="Senda">
+  </form>
+</div>
+<!-- chatbox endar -->
+  
+<!-- glærusyning upp og niður byrjar -->
+  <div class="dagskraTexti">
+    <!-- <div class="slides"> -->
+      <div><h1>Bílasala</h1></div>
+  </div>
+  <!-- glærusyning upp og niður endar -->
+  
+
+<br>
+
+<br><br>
+<!-- about bilar byrjar -->
+<main class="container">
+  <!-- Section 1 -->
+  <section class="row">
+      <div class="homepage-mynd">
+          <img src="images/VW_01-resized.jpeg" alt="Placeholder 1">
+      </div>
+      <div class="content-about">
+          <h2>ID.4 GTX</h2>
+          <p>ID.4 GTX er fjórhjóladrifinn, alrafmagnaður og fullvaxinn fjölskyldubíll með allt að 500 km. drægni (skv. WLTP) og hlaðinn útbúnaði. Þægilegur akstur í vinnuna í borginni og öflugur í þungu færi á veturnar. </p>
+      </div>
+  </section>
+
+  <!-- Section 2 -->
+  <section class="row reverse">
+      <div class="homepage-mynd">
+          <img src="images/bmw_neue-klasse_vision_range-3to2.webp" alt="Placeholder 2">
+      </div>
+      <div class="content-about">
+          <h2> VISION NEUE KLASSE</h2>
+          <p>BMW Vision Neue Klasse er langt á undan sinni samtíð. Hann táknar stökkið inn í nýtt tímabil. Og sameinar nýjustu nýjungar til að veita ógleymanlega upplifun.</p>
+      </div>
+  </section>
+
+  <!-- Section 3 -->
+  <section class="row">
+      <div class="homepage-mynd">
+          <img src="images/3008_Taekni.jpg.webp" alt="Placeholder 3">
+      </div>
+      <div class="content-about">
+          <h2>GLÆNÝR PEUGEOT E-3008 RAFMAGNSBÍLL</h2>
+          <p>Komdu og skoðaðu glænýjan Peugeot E-3008 rafbíl með framúrskarandi drægni, góðum hleðsluhraða, nýju stórfenglegu Panoramic i-Cockpit innra rými, ríkulegum útbúnaði, snjallhleðslu og víðtækri 7 ára ábyrgð á bílnum og 8 ára ábyrgð á drifrafhlöðu.</p>
+      </div>
+  </section>
+</main>
+<!-- about bilar buið -->
+
+<br>
+<br>
+
+
+
+
+
+<br>
+<br>
+<br>
+<section class="tveirdalkar">
+  <div class="form-texti">
+    <h1>Skráðu þig á póstlista!</h1>
+    <br>
+    <p>Meðlimir sem skrá sig geta fengið eftirfarandi:</p>
+    <br>
+    <ul>
+      <li class="færa10px">15% afslátt af fyrstu pöntun</li>
+      <br>
+      <li class="færa10px">Tíma í reynsluakstur með sérfræðing</li>
+      <br>
+      <li class="færa10px">Lorem, ipsum Maiores, fuga tempora saepe enim quia, voluptatem magnam a architecto corporis cupiditate dolores atque.</li>
+      <br>
+      <li class="færa10px">Lorem ipsum ti libero nulla sunt optio. Rerum exercitationem ducimus eligendi at esse. Ullam officia?</li>
+  </ul>
+  </div>
+
+  <div class="form">
+    <!-- form byrjar-->
+    <form method="POST" action="#">
+      <fieldset>
+        <legend></legend>
+        
+        <label>Nafn: </label>
+        <br>
+        <input type="text" name="nafn" required placeholder="Jón Jónsson">
+        <br>
+        <br>
+        <label>Símanúmer: </label>
+        <br>
+        <input type="number" name="simi" required placeholder="1234 567">
+        <br>
+        <br>
+        <label>Email: </label>
+        <br>
+        <input type="email" name="email" require placeholder="example@example.com">
+        <br>
+        <br>
+        <label>Fæðingardagur: </label>
+        <br>
+        <input type="date" name="dagur" required>
+        <br>
+        <br>
+    
+        <input type="checkbox"> Fá allar upplýsingar um nýja bíla
+        <br>
+        
+        <br>
+        Athugasemdir
+        <br>
+        <textarea></textarea>
+        <br> 
+        <div class="submit-container">
+          <input type="submit" value="Skrá">
+      </div>      
+      </fieldset>
+    </form>
+  </div>
+  </section>
+  <!-- form búið -->
+
+ 
+
+  <div class="bodyfooter">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+    <footer>
+    <div class="footer">
+    <div class="roww">
+    <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+    <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fa fa-youtube"></i></a>
+    <a href="https://x.com"><i class="fa fa-twitter"></i></a>
+    </div>
+    
+    <div class="roww">
+    <ul>
+    <li><a href="Index.html">Heim</a></li>
+    <li><a href="Nýir bílar.html">Nýir Bílar</a></li>
+    <li><a href="Bóka Reynsluakstur.html">Bóka reynsluakstur</a></li>
+    <li><a href="Opnunartímar.html">Þjónusta</a></li>
+    </ul>
+    </div>
+    
+    <div class="roww">
+      | VROOM Copyright © 2024 VROOM - All rights reserved |
+    </div>
+    </div>
+    </footer>
+    </div>
+    
+    
+    
+    
+    
+
+
+  </div>
+
+
+</div>
+
+</body>
+</html>

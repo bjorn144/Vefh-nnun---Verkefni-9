@@ -1,0 +1,132 @@
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  width: 100%; /* Fyllir skjábreiddina */
+  height: 100%; /* Hæð aðlagar sig að innihaldi */
+  max-height: 80vh;
+  max-width: 100vw; /* Tryggir að gámurinn minnkar rétt á minni skjám */
+  aspect-ratio: 16/9; /* Tryggir fast hlutfall (breidd/hæð) */
+  overflow: hidden; /* Felur efni utan gáms */
+}
+
+/* Slides */
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  opacity: 0;
+  transition: opacity 1s ease;
+  z-index: 1;
+}
+
+.slide.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+.slide img {
+  width: 100%; /* Fyllir gáminn í breidd */
+  height: 100%; /* Fyllir gáminn í hæð */
+  object-fit: contain; /* Viðheldur myndahlutföllum en fyllir rammann */
+}
+
+/* Caption Styling */
+.slide-caption {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  color: #fff;
+  max-width: 90%; /* Hindrar texta í að fara út fyrir gáminn */
+}
+
+
+
+
+.slide-caption h2 {
+  font-size: 3rem;
+}
+
+.slide-caption p {
+  font-size: 1.5rem;
+}
+
+/* Navigation Arrows */
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 10px;
+  z-index: 2;
+}
+
+.prev {
+  left: 20px;
+}
+
+.next {
+  right: 20px;
+}
+
+/* Dots */
+.dots {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  z-index: 3;
+}
+
+.dot {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.dot.active {
+  background-color: white;
+  z-index: 3;
+}
+
+
+.landing {
+  display: flex;
+  padding: 0;
+  color: #fff;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .slide-caption h2 {
+    font-size: 1.5rem; /* Minni textastærð */
+  }
+
+  .slide-caption p {
+    font-size: 1rem; /* Minni textastærð */
+  }
+
+  .dots {
+    bottom: 5px; /* Lægri staðsetning fyrir dots */
+  }
+}
+/* Reset for consistent sizing */
+
+
+
+.slide-caption h2 {
+  color: #fff;
+}
+
+

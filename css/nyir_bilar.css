@@ -1,0 +1,209 @@
+/* Product Section */
+.products {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 50px 20px;
+    max-width: 1600px;
+
+}
+
+/* Switch to two-column layout for larger screens */
+@media (min-width: 1000px) {
+    .products {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background: #fff;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    width: 100%; /* Tryggir að myndin passar við breidd í umgjörð */
+    max-width: 550px;
+    height: 100%; /* Setur fasta hæð */
+    max-height: 375px;
+    object-fit: cover; /* Klippir eða stækkar myndir til að passa í umgjörð */
+    border-radius: 10px;
+    
+}
+
+.product-image img {
+    width: 100%; /* Tryggir að myndin passar við breidd í umgjörð */
+    height: 100%; /* Setur fasta hæð */
+    object-fit: cover; /* Klippir eða stækkar myndir til að passa í umgjörð */
+    border-radius: 10px;
+}
+
+
+.product-details {
+    text-align: center;
+}
+
+.product-details h2 {
+    font-size: 2rem;
+    margin: 0 0 10px;
+}
+
+.product-details p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #6e6e73;
+}
+
+.product-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: 1px solid #0071e3;
+    background-color: transparent;
+    color: #0071e3;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.product button:hover {
+    background-color: #0071e3;
+    color: white;
+}
+
+
+
+.popup {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 300px; /* Laga stærð formsins */
+    height: 400px; /* Auka hæð fyrir form */
+    margin: auto;
+    padding: 1em; /* Auka padding fyrir þægilegan texta */
+    display: none;
+    background: var(--nc-bg-1);
+    border-radius: 10px; /* Fín stilling */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Smá skuggi */
+    z-index: 1000; /* Setur popup ofar öðrum hlutum */
+}
+
+
+
+.popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--nc-text-1);
+}
+
+.popup-header .xlbl {
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--nc-text-2);
+}
+
+#popup-form label {
+    display: block;
+    margin: 0.5em 0 0.2em;
+    font-weight: bold;
+}
+
+#popup-form input,
+#popup-form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid var(--nc-bg-2);
+    border-radius: 5px;
+}
+
+#popup-form input[type="submit"] {
+    background-color: var(--nc-lk-2);
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+
+    
+}
+
+#popup-form input[type="submit"]:hover {
+    background-color: var(--nc-ac-2);
+    border: 1px solid var(--nc-lk-2);
+    color: var(--nc-lk-2);
+}
+
+
+.register-button {
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #0071e3;
+    background-color: transparent;
+    font-size: 1rem;
+    border-radius: 20px;
+    border: 1px solid #0071e3;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+.register-button:hover {
+    background-color: #0071e3;
+    color: white;
+}
+
+#popup-form {
+    text-align: left;
+}
+
+
+
+#name {
+    font-size: 0.7rem;
+}
+
+#email {
+    font-size: 0.7rem;
+}
+
+#message {
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+.info-box {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 20px;
+    color: #3a3b3c;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+
